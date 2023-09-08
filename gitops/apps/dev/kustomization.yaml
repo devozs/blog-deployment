@@ -3,20 +3,20 @@ kind: Kustomization
 resources:
   - ../base
 patches:
-  - path: patches/ikit-frontend-image-policy.yaml
+  - path: patches/blog-frontend-image-policy.yaml
     target:
       group: image.toolkit.fluxcd.io
       version: v1beta1
       kind: ImagePolicy
       namespace: flux-system
-      name: ikit-frontend
-  - path: patches/ikit-frontend-image-repository.yaml
+      name: blog-frontend
+  - path: patches/blog-frontend-image-repository.yaml
     target:
       group: image.toolkit.fluxcd.io
       version: v1beta1
       kind: ImageRepository
       namespace: flux-system
-      name: ikit-frontend
+      name: blog-frontend
   - path: patches/image-update-automation.yaml
     target:
       group: image.toolkit.fluxcd.io
@@ -24,6 +24,6 @@ patches:
       kind: ImageUpdateAutomation
       namespace: flux-system
 images:
-  - name: ikit-frontend
-    newName: ghcr.io/devozs/ikit-frontend
-    newTag: main-e49126d0-1694200068 # {"$imagepolicy": "flux-system:ikit-frontend:tag"}
+  - name: blog-frontend
+    newName: ghcr.io/devozs/blog-frontend
+    newTag: main-e49126d0-1694200068 # {"$imagepolicy": "flux-system:blog-frontend:tag"}

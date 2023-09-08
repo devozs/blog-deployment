@@ -1,16 +1,16 @@
 apiVersion: projectcontour.io/v1
 kind: HTTPProxy
 metadata:
-  name: ikit-frontend
-  namespace: ikit
+  name: blog-frontend
+  namespace: blog
 spec:
   virtualhost:
-    fqdn: 'ikit.devozs.com'
+    fqdn: 'blog.devozs.com'
     tls:
       secretName: wildcard-devozs-com
   routes:
     - conditions:
         - prefix: /
       services:
-        - name: ikit-frontend
+        - name: blog-frontend
           port: 3000

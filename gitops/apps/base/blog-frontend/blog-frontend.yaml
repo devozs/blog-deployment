@@ -1,27 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ikit-frontend
-  namespace: ikit
+  name: blog-frontend
+  namespace: blog
   labels:
-    app: ikit-frontend
+    app: blog-frontend
 spec:
   selector:
     matchLabels:
-      app: ikit-frontend
+      app: blog-frontend
   replicas: 1
   template:
     metadata:
       labels:
-        app: ikit-frontend
-      annotations:
-        telepresence.getambassador.io/inject-traffic-agent: disabled
+        app: blog-frontend
     spec:
       imagePullSecrets:
         - name: cr-secret
       containers:
-        - name: ikit-frontend
-          image: ikit-frontend:TAG
+        - name: blog-frontend
+          image: blog-frontend:TAG
           imagePullPolicy: Always
           ports:
             - name: http-prom
@@ -30,11 +28,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ikit-frontend
-  namespace: ikit
+  name: blog-frontend
+  namespace: blog
 spec:
   selector:
-    app: ikit-frontend
+    app: blog-frontend
   ports:
     - port: 3000
-      name: ikit-frontend
+      name: blog-frontend

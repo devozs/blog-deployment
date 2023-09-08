@@ -1,11 +1,11 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
-  name: ikit-frontend
+  name: blog-frontend
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: ikit-frontend
+    name: blog-frontend
   filterTags:
     pattern: RELEASE_PLACEHOLDER
     extract: '$ts'

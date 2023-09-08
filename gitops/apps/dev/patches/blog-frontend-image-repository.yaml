@@ -1,6 +1,6 @@
 - op: replace
   path: /spec/image
-  value: ghcr.io/devozs/ikit-frontend
+  value: ghcr.io/devozs/blog-frontend
 - op: replace
   path: /spec/secretRef/name
   value: cr-secret
