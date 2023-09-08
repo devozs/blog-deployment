@@ -1,7 +1,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
-  name: ikit-frontend-image-policy
+  name: ikit-frontend
   namespace: flux-system
 spec:
   imageRepositoryRef:

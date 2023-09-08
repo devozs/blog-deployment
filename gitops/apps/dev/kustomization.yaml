@@ -10,13 +10,14 @@ patches:
       version: v1beta1
       kind: ImagePolicy
       namespace: flux-system
+      name: ikit-frontend
   - path: patches/ikit-frontend-image-repository.yaml
     target:
       group: image.toolkit.fluxcd.io
       version: v1beta1
       kind: ImageRepository
       namespace: flux-system
-      name: ikit-frontend-image-repository
+      name: ikit-frontend
   - path: patches/image-update-automation.yaml
     target:
       group: image.toolkit.fluxcd.io

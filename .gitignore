@@ -35,3 +35,4 @@ terraform.rc
 **/.terraform.lock.hcl
 /.idea/ikit-deployment.iml
 /.idea/*.xml
+/gitops/apps/base/secret/
