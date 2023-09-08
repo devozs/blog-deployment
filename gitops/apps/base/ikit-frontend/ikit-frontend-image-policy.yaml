@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: ikit-frontend-image-repository
+    name: ikit-frontend
   filterTags:
     pattern: RELEASE_PLACEHOLDER
     extract: '$ts'
