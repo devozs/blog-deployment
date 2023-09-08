@@ -36,3 +36,4 @@ terraform.rc
 /.idea/ikit-deployment.iml
 /.idea/*.xml
 /gitops/apps/base/secret/
+/info.txt
