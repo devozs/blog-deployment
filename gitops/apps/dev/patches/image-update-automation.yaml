@@ -1,6 +1,6 @@
 - op: replace
   path: /spec/update/path
-  value: ./gitops/clusters/dev
+  value: ./gitops/apps/dev
 - op: replace
   path: /spec/git/checkout/ref/branch
   value: main
