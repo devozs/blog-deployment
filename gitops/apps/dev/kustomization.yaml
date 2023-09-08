@@ -2,7 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../base
-
 patches:
   - path: patches/ikit-frontend-image-policy.yaml
     target:
@@ -24,8 +23,7 @@ patches:
       version: v1beta1
       kind: ImageUpdateAutomation
       namespace: flux-system
-
 images:
   - name: ikit-frontend
     newName: ghcr.io/devozs/ikit-frontend
-    newTag: main-63199158-1694089730 # {"$imagepolicy": "flux-system:ikit-frontend:tag"}
+    newTag: main-27c989ff-1694191767 # {"$imagepolicy": "flux-system:ikit-frontend:tag"}
