@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ikit-frontend
+  namespace: ikit
   labels:
     app: ikit-frontend
 spec:
@@ -30,6 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ikit-frontend
+  namespace: ikit
 spec:
   selector:
     app: ikit-frontend
