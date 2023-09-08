@@ -26,4 +26,4 @@ patches:
 images:
   - name: ikit-frontend
     newName: ghcr.io/devozs/ikit-frontend
-    newTag: main-04617aa7-1694198818 # {"$imagepolicy": "flux-system:ikit-frontend:tag"}
+    newTag: main-d9101526-1694199310 # {"$imagepolicy": "flux-system:ikit-frontend:tag"}
