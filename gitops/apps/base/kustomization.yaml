@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - ikit-frontend
   - updates
+  - ingress
