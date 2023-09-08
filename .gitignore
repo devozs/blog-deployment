@@ -37,3 +37,4 @@ terraform.rc
 /.idea/*.xml
 /gitops/apps/base/secret/
 /info.txt
+/gitops/apps/base/cert/
