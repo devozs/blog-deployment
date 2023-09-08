@@ -1,6 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: ikit
 resources:
   - ../base
 
@@ -10,18 +9,20 @@ patches:
       group: image.toolkit.fluxcd.io
       version: v1beta1
       kind: ImagePolicy
+      namespace: flux-system
   - path: patches/ikit-frontend-image-repository.yaml
     target:
       group: image.toolkit.fluxcd.io
       version: v1beta1
       kind: ImageRepository
       namespace: flux-system
-      name: frontend
+      name: ikit-frontend-image-repository
   - path: patches/image-update-automation.yaml
     target:
       group: image.toolkit.fluxcd.io
       version: v1beta1
       kind: ImageUpdateAutomation
+      namespace: flux-system
 
 images:
   - name: ikit-frontend
