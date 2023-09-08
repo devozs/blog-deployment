@@ -20,7 +20,7 @@ spec:
         - name: cr-secret
       containers:
         - name: ikit-frontend
-          image: ghcr.io/devozs/ikit-frontend:main-63199158-1694089730
+          image: ikit-frontend:TAG
           imagePullPolicy: Always
           ports:
             - name: http-prom

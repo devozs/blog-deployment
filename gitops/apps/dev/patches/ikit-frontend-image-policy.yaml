@@ -1,0 +1,3 @@
+- op: replace
+  path: /spec/filterTags/pattern
+  value: '^main-[a-f0-9]+-(?P<ts>[0-9]+)'

@@ -1,0 +1,9 @@
+- op: replace
+  path: /spec/update/path
+  value: ./gitops/clasters/dev
+- op: replace
+  path: /spec/git/checkout/ref/branch
+  value: main
+- op: replace
+  path: /spec/git/push/branch
+  value: main

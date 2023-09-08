@@ -1,0 +1,15 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: ikit-frontend-image-policy
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: ikit-frontend-image-repository
+  filterTags:
+    pattern: RELEASE_PLACEHOLDER
+    extract: '$ts'
+  policy:
+    numerical:
+      order: asc
+

@@ -4,3 +4,5 @@ namespace: ikit
 resources:
   - namespace.yaml
   - ikit-frontend.yaml
+  - ikit-frontend-image-repository.yaml
+  - ikit-frontend-image-policy.yaml

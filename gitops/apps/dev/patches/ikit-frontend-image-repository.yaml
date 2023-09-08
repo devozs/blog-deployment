@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/image
+  value: ghcr.io/devozs/ikit-frontend
+- op: replace
+  path: /spec/secretRef/name
+  value: cr-secret
