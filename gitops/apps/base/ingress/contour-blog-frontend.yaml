@@ -7,7 +7,7 @@ spec:
   virtualhost:
     fqdn: 'blog.devozs.com'
     tls:
-      secretName: wildcard-devozs-com
+      secretName: cert-secret
   routes:
     - conditions:
         - prefix: /
