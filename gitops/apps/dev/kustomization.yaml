@@ -26,4 +26,4 @@ patches:
 images:
   - name: blog-frontend
     newName: ghcr.io/devozs/blog-frontend
-    newTag: main-76961b48-1694294844 # {"$imagepolicy": "flux-system:blog-frontend:tag"}
+    newTag: main-990f0604-1694295737 # {"$imagepolicy": "flux-system:blog-frontend:tag"}
