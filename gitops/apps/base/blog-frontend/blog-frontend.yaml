@@ -20,6 +20,9 @@ spec:
       containers:
         - name: blog-frontend
           image: blog-frontend:TAG
+          envFrom:
+            - secretRef:
+                name: analytics-secret
           imagePullPolicy: Always
           ports:
             - name: http-prom
